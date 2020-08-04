@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "C/C++: clang build active file",
+            /*"command": "/usr/bin/clang",
+            "args": [
+                "-g",
+                "-std=c99",
+                "-Wall",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-v"
+            ],
+            */
+            "command": "make",
+            "args" : [],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+            
+        }
+    ],
+    "version": "2.0.0"
+}
