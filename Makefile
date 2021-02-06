@@ -4,9 +4,9 @@ hello : $(object)
 	clang -g -Wall -std=c99 -o hello $(object)
 
 
-hello.o : hello.c my_math.c
-	clang -c hello.c
+hello.o : my_math.h
 
+my_math.o : my_math.h
 
 .PHONY:clean
 
